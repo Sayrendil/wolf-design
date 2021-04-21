@@ -458,7 +458,7 @@ section.offer {
     display: flex;
     align-items: center;
     background: url('../img/123.gif') no-repeat center center;
-    min-height: 100vh;
+    height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     z-index: 3;
