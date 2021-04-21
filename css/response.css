@@ -2,7 +2,7 @@
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 1024px) {
     .offer__title {
         font-size: 30px;
         line-height: 35px;
@@ -35,10 +35,62 @@
 }
 
 @media(max-width: 768px) {
+    .offer__title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .special {
+        flex-direction: column-reverse;
+    }
+    .portfolio__title {
+        visibility: none;
+        opacity: 0;
+        display: none;
+    }
+    .service .card {
+        min-width: 200px;
+    }
+    .slider {
+        visibility: visible;
+        opacity: 1;
+        min-height: 500px;
+    }
     .portfolio {
         display: none;
         visibility: none;
         opacity: 0;
+    }
+    .individ__block {
+        padding: 20px 30px 0 40px;
+    }
+    .contact__content {
+        height: 300px;
+        border-bottom: 1px solid #fff;
+    }
+}
+
+@media(max-width: 425px) {
+    .special h1 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .portfolio {
+        display: none;
+        visibility: none;
+        opacity: 0;
+    }
+    .service {
+        flex-direction: column;
+    }
+    .contact__content h2 {
+        font-size: 22px;
+    }
+    .contact__block {
+        min-width: 300px;
+    }
+    .packet__title {
+        font-size: 32px;
+        line-height: 35px;
     }
 }
 
