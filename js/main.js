@@ -58,4 +58,12 @@ $('.open-overlay').click(function() {
       }
     })
   }
-})
+});
+
+VanillaTilt.init(document.querySelectorAll(".packet__card"), {
+  max: 25,
+  speed: 400,
+  glare: true,
+  "max-glare": 1,
+});
+
