@@ -117,7 +117,17 @@
     .service {
         flex-direction: column;
     }
+    .service .card {
+        height: 300px;
+        flex-direction: column;
+    }
+    .card h2 {
+        padding: 20px 0;
+        font-size: 18px;
+        line-height: 20px;
+    }
     .service__btn {
+        font-size: 18px;
         margin: 5rem 0;
     }
     .contact__content h2 {

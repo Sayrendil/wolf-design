@@ -3,6 +3,26 @@ body {
     margin: 0;
 }
 
+@font-face {
+    font-family: 'Montserrat Medium', sans-serif; /* Гарнитура шрифта */
+    src: url('../fonts/Montserrat-Medium.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: 'Montserrat Bold', sans-serif; /* Гарнитура шрифта */
+    src: url('../fonts/Montserrat-Bold.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: 'Montserrat Light', sans-serif; /* Гарнитура шрифта */
+    src: url('../fonts/Montserrat-Light.ttf'); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: 'Montserrat ExtraBold', sans-serif; /* Гарнитура шрифта */
+    src: url('../fonts/Montserrat-ExtraBold.ttf'); /* Путь к файлу со шрифтом */
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -452,14 +472,14 @@ li {
 */
 
 div.overflow__wrapper {
-    height: 100vh;
+    min-height: 600px;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     background-size: cover;
 }
 
 .overflow__portfolio {
-    height: 100vh;
+    min-height: 600px;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     background-size: cover;
@@ -469,7 +489,6 @@ section.offer {
     display: flex;
     align-items: center;
     background: url('../img/123.gif') no-repeat center center;
-    height: 100vh;
     background-attachment: fixed;
     background-size: cover;
     z-index: 3;
@@ -510,7 +529,7 @@ section.offer p {
 .offer__link i {
     animation: radial-pulse 3s infinite;
     border-radius: 50px;
-    font-size: 20px;
+    font-size: 30px;
     background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -531,6 +550,24 @@ section.offer p {
 .wrapper {
     min-height: 100%;
 }
+
+/* ABOUT BLOCK */
+.about {
+    width: 100%;
+    min-height: 300px;
+    padding: 50px 0;
+}
+.about__link {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 22px;
+    color: #333;
+    transition: all .3s ease 0s;
+}
+.about__link:hover {
+    color: #ccc;
+}
+/* ABOUT BLOCK */
 
 /* SERVICE BLOCK */
 
@@ -907,16 +944,20 @@ main.service .container {
     display: none;
     visibility: none;
     opacity: 0;
-    background: #202126;
+    background: #1c1c1c;
+    min-height: 300px;
 }
 .swiper-container {
     max-width: 900px;
-    min-height: 650px;
+    min-height: 480px;
 }
 .swiper-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.swiper-pagination span:active {
+    color: #fff;
 }
 .image__slider {
     display: flex;
@@ -1446,24 +1487,63 @@ main.service .container {
     min-height: 700px;
 }
 
-.serviceBody__page ul {
+.serviceBody__page #category__list {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    width: 200px;
-    background-color: #1c262a;
+    width: 250px;
+    margin: 20px 0;
+    border-right: 1px solid #000;
 }
 
-.serviceBody__page ul li {
+.serviceBody__page #category__list li {
     padding: 10px 0 10px 0;
-    border: 1px dotted #fff;
     width: 100%;
 }
 
-.serviceBody__page ul li a {
+.serviceBody__page #category__list li a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
+    transition: all .5s ease-in-out 0s;
+}
+
+.serviceBody__page #category__list li a:hover {
+    color: #333;
+}
+
+.serviceBody__block {
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    padding: 30px;
+    margin: 20px 0;
+}
+
+.serviceBody__list {
+    border: none;
+}
+
+.serviceBody__list li {
+    list-style-type: circle;
+    padding: 6px 0;
+}
+
+.serviceBody__link {
+    background-color: transparent;
+    padding: 15px 30px;
+    border: 2px solid #000;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out 0s;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    filter: hue-rotate(80deg);
+    float: right;
+}
+
+.serviceBody__link:hover {
+    color: #1c262a;
+    border-color: #1c262a;
 }
 
 /* SERVICEHEADER PAGE */
