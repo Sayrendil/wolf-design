@@ -1,5 +1,11 @@
 @media(max-width: 1366px) {
-
+    .offer__title {
+        margin: 250px 0 0 0;
+    }
+    .individ__item {
+        display: flex;
+        justify-content: flex-start;
+    }
 }
 
 @media(max-width: 1024px) {
@@ -89,6 +95,9 @@
         line-height: 35px;
         margin: 200px 0 0 0;
     }
+    .offer__title img {
+        height: 30px;
+    }
     .special h1 {
         font-size: 32px;
         line-height: 35px;
@@ -107,6 +116,9 @@
     }
     .service {
         flex-direction: column;
+    }
+    .service__btn {
+        margin: 5rem 0;
     }
     .contact__content h2 {
         font-size: 22px;
@@ -155,6 +167,9 @@
     }
     .service {
         flex-direction: column;
+    }
+    .service__btn {
+        margin: 5rem 0;
     }
     .individ__bg {
         height: 420px;
@@ -212,6 +227,9 @@
     }
     .service {
         flex-direction: column;
+    }
+    .service__btn {
+        margin: 5rem 0;
     }
     .individ__bg {
         height: 420px;
