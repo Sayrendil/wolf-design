@@ -576,38 +576,6 @@ section.offer p {
 
 /* SERVICE BLOCK */
 
-.special {
-    text-align: center;
-    min-height: 200px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-.special .overflow__special {
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 100%;
-    width: 100%;
-    padding: 50px 0;
-}
-
-.info {
-    font-size: 40px;
-    line-height: 42px;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-}
-
-.info__title {
-    font-size: 20px;
-    line-height: 22px;
-    font-weight: 400;
-    color: #fff;
-    text-align: center;
-}
-
 main.service {
     min-height: 850px;
     position: relative;
@@ -753,12 +721,12 @@ main.service .container {
     background-attachment: fixed;
     background-size: cover;
     background-size: cover;
-    min-height: 1000px;
+    min-height: 650px;
 }
 
 .packet .overflow__wrp {
     background-color: rgba(0, 0, 0, 0.7);
-    min-height: 1000px;
+    min-height: 650px;
     width: 100%;
 }
 
@@ -1439,7 +1407,14 @@ main.service .container {
     line-height: 23px;
     letter-spacing: 0.9px;
     display: flex;
-    padding: 50px 0;
+    padding: 0px 0;
+}
+
+.about__list li {
+    list-style-type: disc;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.9px;
 }
 
 /* ABOUT__CONTENT PAGE */

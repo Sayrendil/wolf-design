@@ -91,7 +91,7 @@
         height: 100%;
     }
     .offer__block {
-        padding: 50px 0 0 0;
+        padding: 200px 0 0 0;
     }
     .offer__title {
         font-size: 30px;
@@ -121,13 +121,14 @@
         flex-direction: column;
     }
     .service .card {
-        height: 300px;
+        min-height: 200px;
         flex-direction: column;
+        text-align: center;
     }
     .card h2 {
-        padding: 20px 0;
-        font-size: 18px;
-        line-height: 20px;
+        margin: 20px 0 0 0;
+        font-size: 26px;
+        line-height: 28px;
     }
     .service__btn {
         font-size: 18px;
