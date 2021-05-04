@@ -472,7 +472,7 @@ li {
 */
 
 div.overflow__wrapper {
-    min-height: 600px;
+    min-height: 1000px;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     background-size: cover;
@@ -506,7 +506,7 @@ section.offer .offer__block {
     font-size: 70px;
     text-transform: uppercase;
     font-weight: 300;
-    line-height: 65px;
+    line-height: 75px;
     color: #fff;
     margin: 350px 0 0 0;
 }
@@ -515,7 +515,7 @@ section.offer p {
     color: #fff;
     font-weight: 400;
     font-size: 20px;
-    line-height: 22px;
+    line-height: 23px;
     padding: 20px 0 0 0;
 }
 
@@ -524,6 +524,11 @@ section.offer p {
     text-decoration: none;
     color: #fff;
     padding: 20px 0;
+    transition: all .3s ease 0s;
+}
+
+.offer__link:hover {
+    color: #ccc;
 }
 
 .offer__link i {
@@ -672,11 +677,41 @@ main.service .container {
 
 .card h2 {
     font-size: 28px;
-    color: #FFF;
     text-align: center;
-    padding: 0px 0 0 40px;
-    display: flex;
+    margin: 0px 0 0 40px;
+    background-color: transparent;
 }
+
+.card .red {
+    color: #ff5252;
+    text-shadow: 0 0 6px rgba(255, 82, 82, 0.92), 0 0 30px rgba(255, 82, 82, 0.34), 0 0 12px rgba(255, 82, 82, 0.52), 0 0 21px rgba(255, 82, 82, 0.92), 0 0 34px rgba(255, 82, 82, 0.78), 0 0 54px rgba(255, 82, 82, 0.92);
+}
+
+.card .people {
+    color: #e040fb;
+    text-shadow: 0 0 6px rgba(224, 64, 251, 0.92), 0 0 30px rgba(224, 64, 251, 0.34), 0 0 12px rgba(224, 64, 251, 0.52), 0 0 21px rgba(224, 64, 251, 0.92), 0 0 34px rgba(224, 64, 251, 0.78), 0 0 54px rgba(224, 64, 251, 0.92);
+}
+
+.card .blue {
+    color: #40c4ff;
+    text-shadow: 0 0 6px rgba(64, 196, 255, 0.92), 0 0 30px rgba(64, 196, 255, 0.34), 0 0 12px rgba(64, 196, 255, 0.52), 0 0 21px rgba(64, 196, 255, 0.92), 0 0 34px rgba(64, 196, 255, 0.78), 0 0 54px rgba(64, 196, 255, 0.92);
+}
+
+.card .green {
+    color: #69f0ae;
+    text-shadow: 0 0 6px rgba(105, 240, 174, 0.92), 0 0 30px rgba(105, 240, 174, 0.34), 0 0 12px rgba(105, 240, 174, 0.52), 0 0 21px rgba(105, 240, 174, 0.92), 0 0 34px rgba(105, 240, 174, 0.78), 0 0 54px rgba(105, 240, 174, 0.92);
+}
+
+.card .yellow {
+    color: #ffeb3b;
+    text-shadow: 0 0 6px rgba(255, 235, 59, 0.92), 0 0 30px rgba(255, 235, 59, 0.34), 0 0 12px rgba(255, 235, 59, 0.52), 0 0 21px rgba(255, 235, 59, 0.92), 0 0 34px rgba(255, 235, 59, 0.78), 0 0 54px rgba(255, 235, 59, 0.92);
+}
+
+.card .orange {
+    color: #ff9100;
+    text-shadow: 0 0 6px rgba(255, 145, 0, 0.92), 0 0 30px rgba(255, 145, 0, 0.34), 0 0 12px rgba(255, 145, 0, 0.52), 0 0 21px rgba(255, 145, 0, 0.92), 0 0 34px rgba(255, 145, 0, 0.78), 0 0 54px rgba(255, 145, 0, 0.92);
+}
+
 
 .service__btn {
     position: relative;
@@ -700,12 +735,13 @@ main.service .container {
 }
 
 .service__btn:hover {
-    color: #fff;
+    color: #333;
     box-shadow: 0 0 10px #ccc,
     0 0 20px #ccc,
     0 0 40px #ccc,
     0 0 80px #ccc,
     0 0 100px #ccc;
+    background-color: #fff;
 }
 
 /* SERVICE BLOCK */
